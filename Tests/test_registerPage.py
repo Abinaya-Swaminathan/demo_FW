@@ -25,7 +25,7 @@ class TestRegister(DriverInit):  #inheriting fixture class from base_fixture
             R_obj.click_register_button()
 
         except Exception as error_msg:
-            prefix_random = random.randint(10, 9999999)
+            prefix_random = random.randint(10, 100000000)
             prefix_random=str(prefix_random)
             self.driver.save_screenshot(screenshots_path+ "ss1.png"+prefix_random)
             raise error_msg
